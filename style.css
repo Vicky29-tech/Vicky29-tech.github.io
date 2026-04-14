@@ -124,14 +124,39 @@ h3 { font-weight: 400; color: #666; margin-top: 0; }
     border-bottom: none;
 }
 
-/* Project Specific Styling */
+/* Projects Section - Reverted to match Experience format */
 .tech-stack {
     font-size: 0.85rem;
-    background-color: #f0f4f8;
-    color: #003594;
-    padding: 4px 10px;
-    border-radius: 4px;
+    color: #666;
     font-weight: 600;
+}
+
+/* Skills Section - Tightening it up significantly */
+.skills-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Removed gap entirely */
+}
+
+.skill-group {
+    font-size: 1rem;
+    padding: 4px 0; /* Very tight padding */
+    border-bottom: 1px solid #f0f0f0;
+    margin: 0;
+}
+
+.skill-group:last-child {
+    border-bottom: none;
+}
+
+/* Ensuring spacing is consistent across all cards */
+.info-card {
+    background: white;
+    padding: 20px 30px; /* Slightly tighter padding */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-top: 20px;
+    border-left: 5px solid #003594;
 }
 
 /* Footer Styling */
