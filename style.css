@@ -123,3 +123,38 @@ h3 { font-weight: 400; color: #666; margin-top: 0; }
 .skill-group:last-child {
     border-bottom: none;
 }
+
+/* Project Specific Styling */
+.tech-stack {
+    font-size: 0.85rem;
+    background-color: #f0f4f8;
+    color: #003594;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #003594; /* UCF Blue */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top: 5px solid #FFC904; /* UCF Gold accent */
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: #FFC904;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
