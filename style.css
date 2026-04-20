@@ -206,3 +206,129 @@ footer p {
     text-decoration: none;
     font-weight: bold;
 }
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #003594; /* UCF Blue */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #FFC904; /* UCF Gold */
+}
+
+/* Dropdown Menu logic */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    display: block;
+    margin: 0;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #003594;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Custom Underline Class */
+.custom-underline {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px; /* Adds a little space between the word and the line */
+}
+
+/* Highlight Style */
+.highlight-light-red{
+    background-color: #d35762aa;
+    padding: 0 4px;
+    border-radius: 2px;
+}
+
+.highlight-light-yellow{
+    background-color: #e9d824aa;
+    padding: 0 4px;
+    border-radius: 2px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.highlight-light-blue{
+    background-color: #4199e6aa;
+    padding: 0 4px;
+    border-radius: 2px;
+}
+
+/* Styles for instruction images */
+.instruction-img {
+    display: block;
+    max-width: 25%; /* Ensures it doesn't overflow the card */
+    height: auto;
+    margin: 15px auto; /* Centers the image with space above/below */
+    border-radius: 5px; /* Matches your card corners */
+    border: 1px solid #ddd; /* Adds a subtle frame */
+}
+
+.img-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.image-row {
+    display: flex;       /* Aligns children (images) in a row */
+    gap: 10px;          /* Adds a small space between the two images */
+    justify-content: center; /* Centers the row on the page */
+    margin: 20px 0;
+}
+
+.image-row img {
+    flex: 1;            /* Makes both images take up equal width */
+    max-width: 25%;     /* Ensures they fit side-by-side with the gap */
+    height: auto;       /* Maintains aspect ratio so they don't look squished */
+}
+
+/* Mobile responsive: stack them back on top of each other if the screen is tiny */
+@media (max-width: 600px) {
+    .image-row {
+        flex-direction: column;
+    }
+    .image-row img {
+        max-width: 100%;
+    }
+}
