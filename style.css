@@ -183,3 +183,26 @@ footer p {
 .footer-links a:hover {
     text-decoration: underline;
 }
+
+.reflection-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003594; /* UCF Blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.reflection-btn:hover {
+    background-color: #002266;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    color: #003594;
+    text-decoration: none;
+    font-weight: bold;
+}
