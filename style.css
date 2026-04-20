@@ -312,15 +312,16 @@ nav a:hover {
 
 .image-row {
     display: flex;       /* Aligns children (images) in a row */
-    gap: 10px;          /* Adds a small space between the two images */
+    gap: 1px;          /* Adds a small space between the two images */
     justify-content: center; /* Centers the row on the page */
-    margin: 20px 0;
+    margin: 5px 0;
 }
 
 .image-row img {
     flex: 1;            /* Makes both images take up equal width */
     max-width: 25%;     /* Ensures they fit side-by-side with the gap */
     height: auto;       /* Maintains aspect ratio so they don't look squished */
+    object-fit: contain;
 }
 
 /* Mobile responsive: stack them back on top of each other if the screen is tiny */
@@ -331,4 +332,53 @@ nav a:hover {
     .image-row img {
         max-width: 100%;
     }
+}
+
+/* Styling for Proposal Tables */
+.table-img {
+    display: block;
+    width: 100%;          /* Larger than instruction photos, but not full screen */
+    max-width: 700px;    /* Prevents it from getting too massive on huge monitors */
+    height: auto;
+    margin: 30px auto;   /* Centers it with more "breathing room" around it */
+    border: 1px solid #003594; /* UCF Blue border to make it look like a formal figure */
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a professional shadow */
+}
+
+.resume-entry {
+    margin-bottom: 1px;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0px;
+}
+
+
+.entry-header span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+h2, h3 {
+    margin-bottom: 5px; /* Shrinks space below the header */
+    margin-top: 15px;    /* Keeps space above the header to separate sections */
+}
+
+p {
+    margin-top: 0;      /* Removes the gap above paragraphs */
+    margin-bottom: 10px; /* Small gap between paragraphs */
+}
+
+.video-wrapper {
+    text-align: center;
+    margin: 40px 0;
+}
+
+video {
+    background-color: #000; /* Adds a black background while the video loads */
+    outline: none;
 }
